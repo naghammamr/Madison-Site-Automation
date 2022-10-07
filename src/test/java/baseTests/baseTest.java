@@ -22,7 +22,7 @@ public class baseTest {
 		homePageObject = new HomePage(driver);
 	}
 
-	@AfterClass(enabled = false)
+	@AfterClass(enabled = true)
 	public void closeDriver() {
 		driver.quit();
 	}

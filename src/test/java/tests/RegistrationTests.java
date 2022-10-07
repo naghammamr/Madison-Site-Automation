@@ -10,17 +10,23 @@ import pages.RegistrationPage;
 
 public class RegistrationTests extends baseTest {
 
+	String FirstName = "FN Tester";
+	String LastName = "LN Tester";
+	String Email = "Tester3@Itqan.com";
+	String Password = "123456";
+	
+	
 	@Test
-	public void userCanRegister() {
+	public void userCanRegisterToMadison() {
 
 		homePageObject.clickAccountBtn();
 		RegistrationPage registrationPageObject = homePageObject.clickRegisterLink();
 
-		registrationPageObject.setFirstName("Tester");
-		registrationPageObject.setLastName("First");
-		registrationPageObject.setEmail("test3211@email.com");
-		registrationPageObject.setPassword("123456");
-		registrationPageObject.setConfirmPassword("123456");
+		registrationPageObject.setFirstName(FirstName);
+		registrationPageObject.setLastName(LastName);
+		registrationPageObject.setEmail(Email);
+		registrationPageObject.setPassword(Password);
+		registrationPageObject.setConfirmPassword(Password);
 		registrationPageObject.checkNewsLetter();
 
 		AccountDashboardPage dashboardObject = registrationPageObject.clickRegister();
