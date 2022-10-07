@@ -5,8 +5,9 @@
     <classes>
       <class name="tests.RegistrationTests">
         <methods>
-          <include name="userCanRegisterToMadison"/>
+          <include name="goToMadisonHome"/>
           <include name="closeDriver"/>
+          <include name="userCanRegisterToMadisonFromMyAccountPage"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.RegistrationTests -->

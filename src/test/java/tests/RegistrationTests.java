@@ -12,10 +12,9 @@ public class RegistrationTests extends baseTest {
 
 	String FirstName = "FN Tester";
 	String LastName = "LN Tester";
-	String Email = "Tester3@Itqan.com";
+	String Email = "Tester8@Itqan.com";
 	String Password = "123456";
-	
-	
+
 	@Test
 	public void userCanRegisterToMadison() {
 
@@ -34,5 +33,6 @@ public class RegistrationTests extends baseTest {
 		assertTrue(dashboardObject.getSuccessMessage().contains("Thank you for registering with Madison Island."),
 				"User wasn't registered successfully!");
 	}
+
 
 }
